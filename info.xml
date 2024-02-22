@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <extension key="primarycontact" type="module">
   <file>primarycontact</file>
-  <name>primarycontact</name>
-  <description>FIXME</description>
+  <name>Primary Contact</name>
+  <description>When an organization gets a new primary contact, disable any previous primary contact relationship.</description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>acd on acd.local</author>
-    <email>none@megaphonetech.com</email>
+    <author>Jon Goldberg</author>
+    <email>jon@megaphonetech.com</email>
   </maintainer>
   <urls>
     <url desc="Main Extension Page">http://FIXME</url>
