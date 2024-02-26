@@ -14,7 +14,7 @@ function updatenavigator_civicrm_postCommit($op, $objectName, $objectId, &$objec
   if ($op === 'create' && $objectName === 'Relationship') {
     $primaryRelationshipId = current(\Civi\Api4\RelationshipType::get(FALSE)
       ->addSelect('id')
-      ->addWhere('name_b_a', '=', 'Primary Contact is')
+      ->addWhere('name_b_a', '=', 'Navigator is')
       ->execute()
       ->first());
     if ($objectRef->relationship_type_id == $primaryRelationshipId) {
