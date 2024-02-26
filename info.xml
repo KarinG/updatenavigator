@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<extension key="primarycontact" type="module">
-  <file>primarycontact</file>
+<extension key="updatenavigator" type="module">
+  <file>updatenavigator</file>
   <name>Primary Contact</name>
   <description>When an organization gets a new primary contact, disable any previous primary contact relationship.</description>
   <license>AGPL-3.0</license>
@@ -26,9 +26,9 @@
     <psr4 prefix="Civi\" path="Civi"/>
   </classloader>
   <civix>
-    <namespace>CRM/Primarycontact</namespace>
+    <namespace>CRM/updatenavigator</namespace>
     <format>23.02.1</format>
-    <angularModule>crmPrimarycontact</angularModule>
+    <angularModule>crmupdatenavigator</angularModule>
   </civix>
   <mixins>
     <mixin>mgd-php@1.0.0</mixin>

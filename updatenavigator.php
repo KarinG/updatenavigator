@@ -1,8 +1,8 @@
 <?php
 
-require_once 'primarycontact.civix.php';
+require_once 'updatenavigator.civix.php';
 
-use CRM_Primarycontact_ExtensionUtil as E;
+use CRM_updatenavigator_ExtensionUtil as E;
 
 /**
  * When a new Primary Contact relationship is being made for an Organization,
@@ -10,7 +10,7 @@ use CRM_Primarycontact_ExtensionUtil as E;
  * with an ending date of the creation date of the new relationship
  * so that there is only one Primary Contact per Organization.
  */
-function primarycontact_civicrm_postCommit($op, $objectName, $objectId, &$objectRef) {
+function updatenavigator_civicrm_postCommit($op, $objectName, $objectId, &$objectRef) {
   if ($op === 'create' && $objectName === 'Relationship') {
     $primaryRelationshipId = current(\Civi\Api4\RelationshipType::get(FALSE)
       ->addSelect('id')
@@ -35,8 +35,8 @@ function primarycontact_civicrm_postCommit($op, $objectName, $objectId, &$object
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_config/
  */
-function primarycontact_civicrm_config(&$config): void {
-  _primarycontact_civix_civicrm_config($config);
+function updatenavigator_civicrm_config(&$config): void {
+  _updatenavigator_civix_civicrm_config($config);
 }
 
 /**
@@ -44,8 +44,8 @@ function primarycontact_civicrm_config(&$config): void {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_install
  */
-function primarycontact_civicrm_install(): void {
-  _primarycontact_civix_civicrm_install();
+function updatenavigator_civicrm_install(): void {
+  _updatenavigator_civix_civicrm_install();
 }
 
 /**
@@ -53,6 +53,6 @@ function primarycontact_civicrm_install(): void {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_enable
  */
-function primarycontact_civicrm_enable(): void {
-  _primarycontact_civix_civicrm_enable();
+function updatenavigator_civicrm_enable(): void {
+  _updatenavigator_civix_civicrm_enable();
 }

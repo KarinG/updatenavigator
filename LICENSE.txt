@@ -1,4 +1,4 @@
-Package: primarycontact
+Package: updatenavigator
 Copyright (C) 2024, acd on acd.local <none@megaphonetech.com>
 Licensed under the GNU Affero Public License 3.0 (below).
 
