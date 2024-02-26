@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <extension key="updatenavigator" type="module">
   <file>updatenavigator</file>
-  <name>Primary Contact</name>
+  <name>Update Navigator</name>
   <description>When an organization gets a new primary contact, disable any previous primary contact relationship.</description>
   <license>AGPL-3.0</license>
   <maintainer>
-    <author>Jon Goldberg</author>
-    <email>jon@megaphonetech.com</email>
+    <author>KathC and KarinG</author>
+    <email>frontdesk@semper-it.com</email>
   </maintainer>
   <urls>
     <url desc="Main Extension Page">http://FIXME</url>
